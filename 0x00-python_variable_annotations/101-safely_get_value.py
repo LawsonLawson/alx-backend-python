@@ -12,7 +12,7 @@ from typing import Mapping, Any, Union, TypeVar
 T = TypeVar('T')
 
 
-def safely_get_value(dct: Mapping[Any, Any], key: Any, default:
+def safely_get_value(dict: Mapping[Any, Any], key: Any, default:
                      Union[T, None] = None) -> Union[Any, T]:
     """
     Safely retrieves a value from a mapping if the key exists, otherwise
