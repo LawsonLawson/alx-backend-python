@@ -28,17 +28,6 @@ def safely_get_value(dict: Mapping[Any, Any], key: Any, default:
     Returns:
     Union[Any, T]: The value associated with the key if it exists in the
     mapping, otherwise the default value.
-
-    Example Usage:
-    --------------
-    >>> safely_get_value({'a': 1, 'b': 2}, 'a')
-    1
-
-    >>> safely_get_value({'a': 1, 'b': 2}, 'c', default='not found')
-    'not found'
-
-    >>> safely_get_value({'a': 1, 'b': 2}, 'c')
-    None
     """
     if key in dct:
         return dct[key]
